@@ -1,19 +1,8 @@
-// import { ApiContext, User } from 'types'
+import { ApiContext, User } from '../../types/data'
 import { fetcher } from '../../utils'
 
 export type SigninParams = {
   username: string
-  password: string
-}
-
-// 以下の2つの方はエラー解消のため記述したもの。
-// 後ほど別モジュールで定義して以下の2つの型は削除する
-type ApiContext = {
-  apiRootUrl: string
-}
-
-type User = {
-  name: string
   password: string
 }
 
