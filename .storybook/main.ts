@@ -9,7 +9,7 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
   ],
-  staticDirs: ["public"],
+  staticDirs: ["../public"],
   babel: async (options) => ({
     ...options,
     plugins: [
