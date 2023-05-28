@@ -1,6 +1,7 @@
 import { createGlobalStyle, ThemeProvider } from "styled-components";
-import { Preview } from '@storybook/react';
-// import { theme } from "../src/themes";
+import { Preview, Decorator } from '@storybook/react'
+import { theme } from "../src/themes";
+import React from "react";
 // import * as NextImage from "next/image";
 // import React from "react";
 
@@ -39,10 +40,14 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
+// ここの記述でstyled-componentsにthemeを提供している。
 const preview: Preview = {
   decorators: [
     (Story) => (
-      Story()
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Story />
+      </ThemeProvider>
     ),
   ],
 };
