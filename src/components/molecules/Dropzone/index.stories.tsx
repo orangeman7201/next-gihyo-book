@@ -1,7 +1,7 @@
 import { Meta, StoryFn } from '@storybook/react'
 import React, { useState, useEffect } from 'react'
-import Button from '../../../components/atoms/Button'
-import Box from '../../../components/layouts/Box'
+import Button from '../../atoms/Button'
+import Box from '../../layouts/Box'
 import Dropzone from './index'
 
 export default {

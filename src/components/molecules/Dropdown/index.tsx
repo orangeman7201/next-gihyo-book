@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef, useCallback } from 'react'
 import styled from 'styled-components'
-import Text from '../../../components/atoms/Text'
-import Flex from '../../../components/layouts/Flex'
+import Text from '../../atoms/Text'
+import Flex from '../../layouts/Flex'
 /**
  * 正常系：
  * このコンポーネントにoptionsを配列で渡すとdropdownでリスト表示してくれる。
