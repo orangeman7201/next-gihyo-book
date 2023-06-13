@@ -44,17 +44,17 @@ export default {
   },
 } as Meta<typeof ImagePreview>
 
+interface Image {
+  file?: File
+  src?: string
+}
+
 const Container = styled.div`
   width: 288px;
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr;
 `
-
-interface Image {
-  file?: File
-  src?: string
-}
 
 const Template: StoryFn<typeof ImagePreview> = (args) => {
   const [files, setFiles] = useState<File[]>([])
